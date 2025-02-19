@@ -19,9 +19,10 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
     //Supertrunfo BRASIL - Pais escolhido para o desafio Iniciante
-    int populacao, p_turisticos, cidade;
+    int populacao, p_turisticos;
     float area, pib;
     char estado;
+    char[2] cidade;
 
     printf("Cadastro de cartas do Super Trunfo - Paises\n"); //Abaixo no codigo esta configurado o Cadastro de cartas do Super Trunfo
 
@@ -29,7 +30,7 @@ int main() {
     scanf(" %c", &estado);
 
     printf("Digite o numero da cidade (01-04): ");
-    scanf("%d", &cidade);
+    scanf("%c", &cidade);
 
     printf("Populacao: ");
     scanf("%d", &populacao);
@@ -45,7 +46,7 @@ int main() {
 
     //A partir deste ponto, exibimos os dados da carta computada.
     printf ("------------------------------------------------------\n");
-    printf ("Codigo da Carta %c%.2d\n", estado, cidade);
+    printf ("Codigo da Carta %c%.2c\n", estado, cidade);
     printf ("Populacao: %d\n", populacao);
     printf ("Area: %.2f km²\n", area);
     printf ("PIB: %.2f Bilhoes\n", pib);
