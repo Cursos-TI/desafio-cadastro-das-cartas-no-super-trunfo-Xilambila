@@ -83,7 +83,7 @@ int main() {
 
     printf ("------------------------------------------------------\n");
     printf("\nSuper Trunfo Países:\n");
-    printf ("Carta 02\n");
+    printf ("Carta 01\n");
     printf ("Estado: %c\n", estado_c1);
     printf ("Codigo: %c%.2s\n", estado_c1, codigo_c1);
     printf ("Nome da Cidade: %s\n", cidade_c1);
