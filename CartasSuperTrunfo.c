@@ -22,7 +22,7 @@ int main() {
     int populacao, p_turisticos;
     float area, pib;
     char estado;
-    char[2] cidade;
+    char cidade[2];
 
     printf("Cadastro de cartas do Super Trunfo - Paises\n"); //Abaixo no codigo esta configurado o Cadastro de cartas do Super Trunfo
 
@@ -30,7 +30,7 @@ int main() {
     scanf(" %c", &estado);
 
     printf("Digite o numero da cidade (01-04): ");
-    scanf("%c", &cidade);
+    scanf("%s", cidade);
 
     printf("Populacao: ");
     scanf("%d", &populacao);
@@ -46,7 +46,7 @@ int main() {
 
     //A partir deste ponto, exibimos os dados da carta computada.
     printf ("------------------------------------------------------\n");
-    printf ("Codigo da Carta %c%.2c\n", estado, cidade);
+    printf ("Codigo da Carta %c%.2s\n", estado, cidade);
     printf ("Populacao: %d\n", populacao);
     printf ("Area: %.2f km²\n", area);
     printf ("PIB: %.2f Bilhoes\n", pib);
