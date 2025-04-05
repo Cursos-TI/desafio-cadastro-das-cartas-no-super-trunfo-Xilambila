@@ -4,7 +4,6 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -19,28 +18,35 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
     //Supertrunfo BRASIL - Pais escolhido para o desafio Iniciante
-    int populacao_c1, p_turisticos_c1, populacao_c2, p_turisticos_c2;
-    float area_c1, pib_c1, area_c2, pib_c2;
-    char estado_c1, estado_c2;
+
+    //Variáveis para a Carta 1
+    int populacao_c1, p_turisticos_c1;
+    float area_c1, pib_c1;
+    char estado_c1;
     char codigo_c1[3]; 
-    char cidade_c1[31] = "Teste Um";
+    char cidade_c1[30] = "Teste Um";
+
+    //Variáveis para a Carta 2
+    int populacao_c2, p_turisticos_c2;
+    float area_c2, pib_c2;
+    char estado_c2;
     char codigo_c2[3];
     char cidade_c2[30] = "Teste Dois";
 
 
 
     printf("Cadastro de cartas do Super Trunfo - Paises\n"); //Abaixo no codigo esta configurado o Cadastro de cartas do Super Trunfo
+
+    //Cadastro da Carta 01
     printf("CARTA 01\n");
     printf("Digite a Letra do Estado (A-H): ");
-    scanf(" %c", &estado_c1);
-
-    getchar();
+    scanf(" %c", &estado_c1);  // Espaço antes do %c ignora \n residual
 
     printf("Digite o nome da Cidade: ");
-    scanf(" %[^\n]", cidade_c1); // Lê a linha toda mesmo com espaco
+    scanf(" %30[^\n]", cidade_c1); // Lê até 30 caracteres (evita overflow)
 
     printf("Digite o codigo da Cidade (01-04): ");
-    scanf(" %s", codigo_c1);
+    scanf(" %2s", codigo_c1); // Lê até 2 caracteres
 
     printf("Populacao: ");
     scanf("%d", &populacao_c1);
@@ -55,18 +61,16 @@ int main() {
     scanf("%d", &p_turisticos_c1);
     printf("\nCadastro concluído.\n");
 
-
+    // CCadastro da Carta 02
     printf("CARTA 02\n");
     printf("Digite a Letra do Estado (A-H): ");
-    scanf(" %c", &estado_c2);
-
-    getchar();
+    scanf(" %c", &estado_c2); // Espaço antes do %c ignora \n residual
 
     printf("Digite o nome da Cidade: ");
-    scanf(" %[^\n]", cidade_c2); // Lê a linha toda mesmo com espaco
+    scanf(" %30[^\n]", cidade_c2); // Lê até 30 caracteres %30[^\n] (evita overflow)
 
     printf("Digite o codigo da Cidade (01-04): ");
-    scanf(" %s", codigo_c2);
+    scanf(" %2s", codigo_c2); // Lê até 2 caracteres
 
     printf("Populacao: ");
     scanf("%d", &populacao_c2);
@@ -81,6 +85,7 @@ int main() {
     scanf("%d", &p_turisticos_c2);
     printf("\nCadastro concluído.\n");
 
+    // Exibição dos dados 
     printf ("------------------------------------------------------\n");
     printf("\nSuper Trunfo Países:\n");
     printf ("Carta 01\n");
@@ -103,5 +108,7 @@ int main() {
     printf ("PIB: %.2f Bilhoes de Reais\n", pib_c2);
     printf ("Numero de Pontos Turisticos: %d\n", p_turisticos_c2);
     printf ("------------------------------------------------------\n");
+
+    
     return 0;
 }
