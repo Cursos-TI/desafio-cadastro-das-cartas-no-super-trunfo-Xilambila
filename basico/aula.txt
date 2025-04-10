@@ -1,0 +1,140 @@
+A TechNova, empresa líder em inovação tecnológica, está desenvolvendo um sistema para o jogo Super Trunfo com o tema países e contratou você para essa atividade. O objetivo é cadastrar cartas representando cidades de diferentes estados, utilizando variáveis, operadores e funções de entrada e saída em C. Cada carta incluirá informações como estado, código da carta, nome da cidade, população, PIB, área e número de pontos turísticos, além de propriedades como densidade populacional e PIB per capita , calculadas a partir das outras informações contidas.
+
+
+
+países estados cidades
+cada estado terá 4 cartas = 4 cidades
+
+países todos
+cada pais terá 4 cartas de cidades
+
+Nivel Basico
+
+Paises
+
+- Estado (char)
+- Código da carta (char[])
+- Nome da cidade (char[])
+- População (int)
+- Área em km2 (float)
+- PIB (float)
+- Numero de pontos turísticos (int)
+
+Basico - O programa:
+
+O Super Trunfo é um jogo no qual os jogadores comparam as propriedades de suas cartas para determinar quem tem a mais forte. Cada carta representa um objeto com várias propriedades. Nesse desafio, o tema do jogo será Países, e as cartas serão divididas por estados, com cada estado tendo quatro cartas que representam diferentes cidades.
+
+Cada país será dividido em oito estados, identificados pelas letras de A a H. Cada estado terá quatro cidades, numeradas de 1 a 4. A combinação da letra do estado e o número da cidade define o código da carta (por exemplo, A01, A02, B01, B02).
+
+Cada carta de cidade apresentará as seguintes informações:
+
+- População : número de habitantes da cidade.
+- Área : área total da cidade em quilômetros quadrados (km²).
+- PIB : produto interno bruto da cidade, representando a soma de todos os bens e serviços produzidos no município.
+- Número de pontos turísticos : quantidade de pontos turísticos famosos na cidade.
+
+
+Funcionalidades do sistema
+O sistema permitirá ao usuário cadastrar cartas de cidades, fornecendo informações detalhadas como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos. As entradas serão feitas via terminal de comando. Após o cadastro, o sistema exibirá os dados de forma clara e organizada.
+
+Cadastro das cartas
+O sistema permitirá ao usuário cadastrar as cartas do jogo, fornecendo informações detalhadas sobre cada cidade representada, de acordo com as seguintes orientações:
+
+Cada carta será identificada pela letra do estado seguida de um número de 01 a 04 (por exemplo, A01, A02, B01, B02).
+Para cada carta, o usuário deverá inserir:
+Estado (char)
+Código da carta (char[])
+Nome da cidade (char[])
+População (int)
+Área em km² (float)
+PIB (float)
+Número de pontos turísticos (int)
+
+Entrada e saída de dados
+Os requisitos para a entrada de dados são:
+
+O sistema será operado inteiramente via terminal ou prompt de comando.
+O usuário será solicitado a inserir os dados de cada carta de forma interativa.
+Cada entrada será solicitada de maneira clara, indicando o dado específico que está sendo solicitado (por exemplo, "Digite o estado:", "Digite o código da carta:", "Digite o nome da cidade:", "Digite a população:").
+Os requisitos para a saída de dados são:
+
+Após o cadastro de cada cidade, o sistema exibirá os dados cadastrados de forma clara e organizada.
+Cada propriedade da cidade será apresentada em uma linha separada com a descrição correspondente, por exemplo:
+Estado: A
+Código da Carta: A01
+Nome da Cidade: São Paulo
+População: 12325000
+Área: 1521.11 km²
+PIB: 699.28 bilhões de reais
+Número de Pontos Turísticos: 50
+
+
+Requisitos funcionais e não funcionais
+Os requisitos funcionais são:
+
+O sistema será operado inteiramente via terminal ou prompt de comando.
+O sistema permitirá ao usuário cadastrar as cartas de cidades.
+Cada carta será identificada por um código único composto pela letra do estado seguida por um número de 01 a 04.
+O usuário será solicitado a inserir os dados de cada carta de forma interativa.
+O sistema deve exibir uma confirmação após cada carta ser cadastrada com sucesso.
+Cada propriedade da cidade será apresentada em uma linha separada, com a descrição correspondente.
+Os requisitos não funcionais são:
+
+Usabilidade : a interface do usuário CLI deve ser simples e fácil de usar, mesmo para pessoas que não têm familiaridade com linhas de comando.
+Performance : o sistema deve executar as operações de entrada, cálculo e saída sem atrasos perceptíveis.
+Documentação : o código deve ser bem documentado, incluindo comentários sobre a função de cada parte do código e instruções de uso do sistema.
+Manutenabilidade : o código deve ser escrito de forma clara, empregando nomes de variáveis que permitam o fácil entendimento por um novo desenvolvedor.
+
+
+
+COMO ADICIONAR COMETARIOS AO CODIGO
+
+Começam com // e se estendem até o final da linha. Eles são frequentemente usados para breves anotações ou para explicar uma linha específica de código.
+
+    int x = 10; // Declara uma variável inteira e a inicializa com o valor 10.
+
+Aqui voce tambem pode adicionar um comentario em uma unica linha para o que vem a seguir seguindo com o // depois o comentario
+
+
+Comentario de Multiplas Linhas
+
+Começam com /* e terminam com */. Eles são usados para descrever seções maiores de código ou fornecer explicações detalhadas.
+
+    /* (comenntario)
+    Essa função calcula a soma de dois números inteiros.
+    Parâmetros:
+    - int a: o primeiro número
+    - int b: o segundo número
+    Retorno:
+    - int: a soma de a e b
+    */
+int soma(int a, int b) {
+return a + b;
+}
+
+Nomes significativos
+Use nomes de variáveis e funções que façam sentido. Por exemplo, em vez de x e y, use soma ou resultado. Você irá compreender melhor mais à frente!
+
+
+- Processos de Programaçao
+
+    Entendimento do problema
+Primeiramente, você precisa entender o que deve ser resolvido. Para fazer um bolo, por exemplo, você precisa saber quais ingredientes usar, como misturar os ingredientes, como assar e o que o bolo deve ter no final.
+
+    Planejamento
+Aqui, você decide como resolver o problema. Para o bolo, você decide a ordem dos passos: misturar os ingredientes, assar e decorar. Em nosso caso, vamos planejar o código usando ferramentas como pseudocódigo e fluxogramas.
+
+    Codificação
+Agora, escrevemos o código. É como seguir a receita escrita, mas usando uma linguagem que permita ser traduzida para códigos que o computador consiga compreender e executar todos os passos. Essa linguagem é a chamada linguagem de programação.
+
+    Compilação
+Essa é a etapa que traduz o código que você escreveu com uma linguagem de programação em uma sequência de instruções, ou códigos, que o computador consegue entender e executar. É como se fosse o processo de pegar todos os ingredientes, misturar de acordo com a receita e ter a massa que será levada ao forno para assar.
+
+    Teste
+Esse é o momento em que verificamos se tudo funciona. No caso do bolo, seria provar para ver se está gostoso. Para o código, rodamos para ver se ele faz o que deveria fazer.
+
+    Depuração
+Se algo deu errado, corrigimos os erros. No código, você faz ajustes até tudo funcionar perfeitamente.
+
+    Manutenção
+Depois de tudo pronto, pode ser necessário fazer ajustes ou melhorias. É como armazenar a receita para usá-la de novo ou melhorar o próximo bolo.

@@ -85,14 +85,6 @@ int main() {
     scanf("%d", &p_turisticos_c2);
     printf("\nCadastro concluído.\n");
 
-    //Calculo de Densidade Populacional
-    float densidade_populacional_c1 = (float)populacao_c1 / area_c1; // Densidade populacional carta 1
-    float densidade_populacional_c2 = (float)populacao_c2 / area_c2; // Densidade populacional carta 2
-
-    //Calculo de PIB per Capta
-    float pib_per_capta_c1 = pib_c1 / populacao_c1; // PIB per capita carta 1
-    float pib_per_capta_c2 = pib_c2 / populacao_c2; // PIB per capita carta 2
-
     // Exibição dos dados 
     printf ("------------------------------------------------------\n");
     printf("\nSuper Trunfo Países:\n");
@@ -104,8 +96,6 @@ int main() {
     printf ("Area: %.2f km²\n", area_c1);
     printf ("PIB: %.2f Bilhoes de Reais\n", pib_c1);
     printf ("Numero de Pontos Turisticos: %d\n", p_turisticos_c1);
-    printf ("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_c1);
-    printf ("PIB per Capta: %.2f Bilhoes de Reais\n", pib_per_capta_c1);
     printf ("------------------------------------------------------\n");
 
     printf("\nSuper Trunfo Países:\n");
@@ -117,8 +107,6 @@ int main() {
     printf ("Area: %.2f km²\n", area_c2);
     printf ("PIB: %.2f Bilhoes de Reais\n", pib_c2);
     printf ("Numero de Pontos Turisticos: %d\n", p_turisticos_c2);
-    printf ("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_c2);
-    printf ("PIB per Capta: %.2f Bilhoes de Reais\n", pib_per_capta_c2);
     printf ("------------------------------------------------------\n");
 
     
