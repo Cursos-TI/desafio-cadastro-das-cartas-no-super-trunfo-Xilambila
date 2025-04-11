@@ -158,7 +158,7 @@ int main() {
     printf ("Area- A carta 01 é a vencedora? %d / A carta 02 é a vencedora? %d / Empatou? %d\n", area_c1 > area_c2, area_c2 > area_c1, area_c1 == area_c2);
     printf ("PIB- A carta 01 é a vencedora? %d / A carta 02 é a vencedora? %d / Empatou? %d\n", pib_c1 > pib_c2, pib_c2 > pib_c1, pib_c1 == pib_c2);
     printf ("Pontos Turisticos- A carta 01 é a vencedora? %d / A carta 02 é a vencedora? %d / Empatou? %d\n", p_turisticos_c1 > p_turisticos_c2, p_turisticos_c2 > p_turisticos_c1, p_turisticos_c1 == p_turisticos_c2);
-    printf ("Densidade Populacional- A carta 01 é a vencedora? %d / A carta 02 é a vencedora? %d / Empatou? %d\n", densidade_populacional_c1 > densidade_populacional_c2, densidade_populacional_c2 > densidade_populacional_c1, densidade_populacional_c1 == densidade_populacional_c2);
+    printf ("Densidade Populacional- A carta 01 é a vencedora? %d / A carta 02 é a vencedora? %d / Empatou? %d\n", densidade_populacional_c1 < densidade_populacional_c2, densidade_populacional_c2 < densidade_populacional_c1, densidade_populacional_c1 == densidade_populacional_c2);
     printf ("PIB per Capta- A carta 01 é a vencedora? %d / A carta 02 é a vencedora? %d / Empatou? %d\n", pib_per_capta_c1 > pib_per_capta_c2, pib_per_capta_c2 > pib_per_capta_c1, pib_per_capta_c1 == pib_per_capta_c2);
     printf ("------------------------------------------------------\n");
     printf ("--------------------------Fim-------------------------\n");
