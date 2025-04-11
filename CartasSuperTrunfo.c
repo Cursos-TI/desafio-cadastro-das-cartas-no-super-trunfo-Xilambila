@@ -75,7 +75,7 @@ int main() {
     scanf(" %2s", codigo_c2); // Lê até 2 caracteres
 
     printf("Populacao: ");
-    scanf("%ld", &populacao_c2);
+    scanf("%lu", &populacao_c2);
 
     printf("Area (km²): ");
     scanf("%f", &area_c2);
@@ -88,13 +88,13 @@ int main() {
     printf("\nCadastro concluído.\n");
 
     //Calculo de Densidade Populacional
-    float densidade_populacional_c1 = (unsigned long)populacao_c1 / area_c1; // Densidade populacional carta 1
-    float densidade_populacional_c2 = (unsigned long)populacao_c2 / area_c2; // Densidade populacional carta 2
+    float densidade_populacional_c1 = (float)populacao_c1 / area_c1; // Densidade populacional carta 1
+    float densidade_populacional_c2 = (float)populacao_c2 / area_c2; // Densidade populacional carta 2
 
         //inverso da densidade populacional
     
-        float inverso_c2 = area_c2 / populacao_c2;
-        float inverso_c1 = area_c1 / populacao_c1;
+        float inverso_c2 = (float)area_c2 / populacao_c2;
+        float inverso_c1 = (float)area_c1 / populacao_c1;
 
 
     //Calculo de PIB per Capta
